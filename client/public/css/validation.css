@@ -1,0 +1,16 @@
+.form-group.invalid input,
+.form-group.invalid select {
+    border-color: red;
+    box-shadow: 0px 0px 5px 0.2px red;
+}
+
+.form-group.invalid span {
+    color: red;
+    font-size: 12px;
+}
+
+.form-group.valid input,
+.form-group.valid select {
+    border-color: forestgreen;
+    box-shadow: 0px 0px 5px .2px forestgreen;
+}

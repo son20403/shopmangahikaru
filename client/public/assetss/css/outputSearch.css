@@ -1,0 +1,340 @@
+.search-input {
+    position: relative;
+}
+
+.outputSearch {
+    display: none;
+    position: absolute;
+    border: 1px solid #48484842;
+    width: 400px;
+    max-height: 400px;
+    min-height: 100px;
+    background-color: #27292a;
+    border-radius: 5px;
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.poposition {
+    position: absolute;
+}
+
+.position #closeOutput {
+    display: none;
+    position: absolute;
+    top: 60%;
+    right: -3%;
+    margin: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ec6090;
+    z-index: 1000;
+    transition: all .2s ease-in-out;
+}
+
+#closeOutput.show {
+    display: block;
+}
+
+.position #closeOutput:hover {
+    color: aliceblue;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ec6090;
+    border-radius: 23px;
+}
+
+.show {
+    display: block;
+}
+
+.linkItem {}
+
+.formItem {
+    border-radius: 23px;
+    margin: 15px 10px;
+}
+
+.formItem:hover .titleItem {
+    color: #ec6090;
+    transition: all ease-in-out 0.3s;
+}
+
+.formItem::after {
+    margin: auto;
+    content: "";
+    /* background-color: #ffffff; */
+    width: 70%;
+    height: 1px;
+    border-bottom: 1px solid #ffffff2c;
+    margin-top: 15px;
+}
+
+.imgItem {
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.infoItem {}
+
+.titleItem {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.authorItem {
+    font-size: 12px;
+    display: block;
+}
+
+.average_score,
+.review_count {
+    float: right;
+}
+
+li #btnLogout {
+    cursor: pointer;
+}
+
+#listProduct img {
+    width: 100%;
+    height: 360px;
+    flex-wrap: wrap;
+}
+
+#headComment h4 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#listComment {
+    margin: 10px 0;
+    text-align: justify;
+    border-bottom: 1px solid;
+    margin: 25px 0;
+}
+
+#listComment h4 {
+    font-size: 15px;
+}
+
+#listComment span {
+    display: block;
+    color: #ec6090;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.comment-input {
+    margin-top: 20px;
+    border-radius: 23px;
+    padding: 30px;
+    background-color: #1f2122;
+}
+
+#commentForm {
+    position: relative;
+}
+
+#commentForm input {
+    background-color: #27292a;
+    height: 46px;
+    width: 100%;
+    border-radius: 23px;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    padding: 0px 15px 0px 45px;
+    outline: none;
+    transition: all ease-in-out 0.3s;
+}
+
+#commentForm input:focus {
+    outline: 1px solid #ec6090;
+}
+
+#commentForm i {
+    position: absolute;
+    color: #666;
+    left: 20px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#ping {
+    color: #ec6090;
+}
+
+.message-error {
+    text-align: center;
+    margin-top: 20px;
+    color: #ec6090;
+    display: none;
+}
+
+.message-error.show {
+    display: block;
+}
+
+#commentInput {
+    width: 80%;
+    position: relative;
+    right: 0px;
+}
+
+#btnComment {
+    position: absolute;
+    right: 50px;
+    border: none;
+    background: none;
+}
+
+#btnComment i {
+    color: #ec6090;
+}
+
+
+/* MINI_LOADING */
+
+.mini-loading.show {
+    display: block;
+}
+
+.mini-loading {
+    margin: auto;
+    height: 20px;
+    width: 20px;
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    border-radius: 50%;
+    border: 4px solid #add8e6;
+    border-color: #1e70c9 #add8e6;
+    box-sizing: border-box;
+    animation: loading 0.7s linear infinite;
+}
+
+@-moz-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*  */
+
+.rating {
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    display: block;
+    overflow: hidden;
+    /* box-shadow: 0 1px #cccccc3e, 0 5px #dddddd48, 0 9px 6px -3px #99999960; */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating:not(:checked)>input {
+    display: none;
+}
+
+
+/* - - - - - RATE */
+
+#rate:not(:checked)>label {
+    cursor: pointer;
+    float: right;
+    width: 35px;
+    height: 35px;
+    display: block;
+    color: rgba(236, 95, 145, 0.4);
+    line-height: 33px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#rate:not(:checked)>label:hover,
+#rate:not(:checked)>label:hover~label {
+    color: rgba(236, 95, 145, 0.6);
+}
+
+#rate>input:checked+label:hover,
+#rate>input:checked+label:hover~label,
+#rate>input:checked~label:hover,
+#rate>input:checked~label:hover~label,
+#rate>label:hover~input:checked~label {
+    color: rgba(236, 95, 145, 0.8);
+}
+
+#rate>input:checked~label {
+    color: #ec6090;
+}
+
+
+/* .overlay {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+} */
+
+
+/* - - - - - LIKE */
+
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

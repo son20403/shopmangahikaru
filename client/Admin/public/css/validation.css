@@ -1,0 +1,20 @@
+.form-group.invalid input,
+.form-group.invalid select,
+.form-group.invalid textarea,
+.form-group.invalid .tox-tinymce {
+    border-color: red;
+    box-shadow: 0px 0px 5px 0.2px red;
+}
+
+.form-group.invalid span {
+    color: red;
+    font-size: 12px;
+}
+
+.form-group.valid input,
+.form-group.valid select,
+.form-group.valid textarea,
+.form-group.valid .tox-tinymce {
+    border-color: forestgreen;
+    box-shadow: 0px 0px 5px .2px forestgreen;
+}
